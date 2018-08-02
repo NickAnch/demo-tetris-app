@@ -6,21 +6,12 @@ import { TetrisService } from '../../services/tetris.service';
   templateUrl: './time.component.html',
   styleUrls: ['./time.component.scss']
 })
-export class TimeComponent implements OnInit {
-  public time: Date;
+export class TimeComponent {
 
-  constructor(private _tetrisService: TetrisService) { }
-
-  ngOnInit() {
-  }
-
-  public updateTime() {
-    this.time = new Date();
-  }
+  constructor(private tetrisService: TetrisService) { }
 
   public addTime(): void {
-    this.updateTime();
-    this._tetrisService
-        .addTime(this.time);
+    this.tetrisService
+        .addTime(new Date());
   }
 }
