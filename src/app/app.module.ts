@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { TimeComponent } from './components/time/time.component';
 import { TetrisService } from './services/tetris.service';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { TetrisComponent } from './components/tetris/tetris.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TimeComponent
+    TimeComponent,
+    TetrisComponent
   ],
   imports: [
     BrowserModule,
