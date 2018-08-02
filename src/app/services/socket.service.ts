@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from '../../../node_modules/rxjs';
+import { Observable } from 'rxjs';
 import * as io from 'socket.io-client';
 
 @Injectable({
@@ -16,6 +16,8 @@ export class SocketService {
     return new Observable<any>( (observer) => {
       this.socket.on('message', (message) => {
         observer.next(message);
+      }, (error) => {
+        console.log(error);
       });
     });
   }
