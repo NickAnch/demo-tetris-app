@@ -8,10 +8,15 @@ import { TimeComponent } from './components/time/time.component';
 import { TetrisService } from './services/tetris.service';
 import { TetrisComponent } from './components/tetris/tetris.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CardsComponent } from './pages/cards/cards.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const routes = [
   { path: '',
     component: HomeComponent
+  },
+  { path: 'cards',
+    component: CardsComponent
   },
   { path: '**',
     redirectTo: '' }
@@ -22,7 +27,9 @@ const routes = [
     AppComponent,
     TimeComponent,
     TetrisComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
