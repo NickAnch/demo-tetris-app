@@ -1,0 +1,14 @@
+$primary-color: #018790;
+
+.footer {
+	background: $primary-color;
+	position: relative;
+	height: 50px;
+	margin-top: -50px;
+	clear: both; 
+
+	p {
+		color: #FFF;
+		padding: 15px;
+	}
+}

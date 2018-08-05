@@ -1,7 +1,5 @@
 .content {
-    height: 2000px;
-}
-
-p {
-    height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

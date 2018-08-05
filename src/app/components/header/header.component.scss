@@ -1,17 +1,39 @@
+$primary-color: #018790;
+
 .header {
-  background: #f1f1f1;
-  height: 70px;
+  background: $primary-color;
+
+  a {
+    color: #FFF;
+    display: block;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #BBB;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul li:nth-child(n + 2) {
+    margin-left: 40px;
+  }
+}
+
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
+
+  + .space-for-sticky {
+      padding-top: 84px;
+  }
 }
 
-ul {
-  display: flex;
-  align-items: center;
-}
-
-ul > li {
-  padding: 15px;
-  margin: 5px;
+.space-for-sticky {
+  padding: 20px;
 }

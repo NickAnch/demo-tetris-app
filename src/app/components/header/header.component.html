@@ -1,6 +1,13 @@
-<div class="header">
-  <ul>
-    <li>hello</li>
-    <li>bye</li>
-  </ul>
+<div class="header" [ngClass]="{'sticky': shouldStick}">
+  <div class="container">
+    <ul>
+      <li>
+          <a  [routerLink]="['']">Demo tetris</a>
+      </li>
+      <li>
+          <a [routerLink]="['/cards']">Cards</a>
+      </li>
+    </ul>
 </div>
+</div>
+<div class="space-for-sticky"></div>
