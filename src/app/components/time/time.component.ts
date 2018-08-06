@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TetrisService } from '../../services/tetris.service';
 
 @Component({

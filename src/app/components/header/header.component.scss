@@ -28,12 +28,6 @@ $primary-color: #018790;
   position: fixed;
   top: 0;
   width: 100%;
-
-  + .space-for-sticky {
-      padding-top: 84px;
-  }
 }
 
-.space-for-sticky {
-  padding: 20px;
-}
+

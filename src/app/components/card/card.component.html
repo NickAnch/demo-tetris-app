@@ -1,29 +1,29 @@
 <div id="card">
   <div class="card-header">
     <div class="round"></div>
-      <p>Nick Anchutin</p>
-      <p>Web Developer</p>
+      <p>{{ persons.name }}</p>
+      <p>{{ persons.profession }}</p>
   </div>
   <div class="card-footer">
     <div class="info">
       <div class="info-item">
-        <fa-icon class="fas" [icon]="['fas', 'mobile-alt']"></fa-icon>
+        <fa-icon class="fas mobile" [icon]="['fas', 'mobile-alt']"></fa-icon>
         <div class="info-content">
-          <p>999-999-99-99</p>
+          <p>{{ persons.phone }}</p>
           <p>Mobile number</p>
       </div>
       </div>
       <div class="info-item">
         <fa-icon class="fas" [icon]="['fas', 'envelope']"></fa-icon>
         <div class="info-content">
-          <p>nick@website.ru</p>
+          <p>{{ persons.email }}</p>
           <p>Email Address</p>
         </div>
       </div>
       <div class="info-item">
         <fa-icon class="fas" [icon]="['fas', 'globe-americas']"></fa-icon>
         <div class="info-content">
-          <p>www.nick.com</p>
+          <p>{{ persons.site }}</p>
           <p>Website Address</p>
         </div>
       </div>

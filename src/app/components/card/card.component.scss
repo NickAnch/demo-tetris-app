@@ -3,7 +3,7 @@
 	height: 420px;
 	width: 240px;
 	border-radius: 7px;
-	box-shadow: 0 3px 10px rgba(0,0,0,.25);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
 }
 
 .card-header {
@@ -25,7 +25,6 @@
 		color: #75d9fd;
 		font-size: 9px;
 	}
-	
 }
 
 .card-footer {
@@ -41,8 +40,8 @@
 	width: 110px;
 	height: 110px;
   border-radius: 50%; 
-  background: url(src/assets/images/2.PNG) no-repeat -30px 0; 
-	background-size: auto 110px;
+  background: url(src/assets/images/2.PNG) 60% 100% no-repeat; 
+	background-size: cover;
 	margin-bottom: 15px;
 }
 
@@ -52,7 +51,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	box-shadow: 0 1px 10px rgba(0,0,0,.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
 	margin: 15px 0 20px 0;
 	width: 90%;
 }
@@ -84,32 +83,32 @@ fa-icon.fas {
 	color: #3097d0;
 	font-size: 20px;
 	padding: 10px;
+}
 
-	:nth-child(1) {
-		width: 20px;
-		text-align: center;
-	}	
+fa-icon.mobile {
+	width: 20px;
+	text-align: center;
 }
 
 .social-buttons {
 	width: 100%;
 	display: flex;
 
-		a {
-			color: #a0a0a0;
-			font-size: 16px;
-			background: #efefef;
-			flex-grow: 1;
-			text-align: center;
-			padding: 15px 0;
-			border-right: 2px solid #e1e1e1;
-		}
+	a {
+		color: #a0a0a0;
+		font-size: 16px;
+		background: #efefef;
+		flex-grow: 1;
+		text-align: center;
+		padding: 15px 0;
+		border-right: 2px solid #e1e1e1;
+	}
 
-		a:nth-last-child(1) {
-			border-right: none;
-		}
+	a:nth-last-child(1) {
+		border-right: none;
+	}
 
-		a:hover {
-			color: #b0b0b0;
-		}
+	a:hover {
+		color: #b0b0b0;
+	}
 }

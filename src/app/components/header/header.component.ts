@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,20 +6,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  public shouldStick: boolean;
 
-  constructor() {
-    this.bingScrollEvent();
-  }
-
-  bingScrollEvent() {
-    window.addEventListener('scroll', (e) => {
-      if (window.pageYOffset > 0) {
-        this.shouldStick = true;
-      } else {
-        this.shouldStick = false;
-      }
-    });
-}
+  constructor() { }
 
 }
