@@ -40,7 +40,8 @@
 	width: 110px;
 	height: 110px;
   border-radius: 50%; 
-  background: url(src/assets/images/2.PNG) 60% 100% no-repeat; 
+	background: url(src/assets/images/2.PNG);
+	background-position: center; 
 	background-size: cover;
 	margin-bottom: 15px;
 }
