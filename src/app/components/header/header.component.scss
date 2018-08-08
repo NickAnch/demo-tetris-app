@@ -1,0 +1,31 @@
+$primary-color: #018790;
+
+.header {
+  background: $primary-color;
+
+  a {
+    color: #FFF;
+    display: block;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #BBB;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul li:nth-child(n + 2) {
+    margin-left: 40px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

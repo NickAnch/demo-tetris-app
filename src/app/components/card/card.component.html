@@ -1,0 +1,38 @@
+<div id="card">
+  <div class="card-header">
+    <div class="round"></div>
+      <p>{{ person.name }}</p>
+      <p>{{ person.profession }}</p>
+  </div>
+  <div class="card-footer">
+    <div class="info">
+      <div class="info-item">
+        <fa-icon class="fas mobile" [icon]="['fas', 'mobile-alt']"></fa-icon>
+        <div class="info-content">
+          <p>{{ person.phone }}</p>
+          <p>Mobile number</p>
+      </div>
+      </div>
+      <div class="info-item">
+        <fa-icon class="fas" [icon]="['fas', 'envelope']"></fa-icon>
+        <div class="info-content">
+          <p>{{ person.email }}</p>
+          <p>Email Address</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <fa-icon class="fas" [icon]="['fas', 'globe-americas']"></fa-icon>
+        <div class="info-content">
+          <p>{{ person.site }}</p>
+          <p>Website Address</p>
+        </div>
+      </div>
+    </div>
+    <div class="social-buttons">
+      <a href="#"><fa-icon class="fab" [icon]="['fab', 'facebook-f']"></fa-icon></a>
+      <a href="#"><fa-icon class="fab" [icon]="['fab', 'twitter']"></fa-icon></a>
+      <a href="#"><fa-icon class="fab" [icon]="['fab', 'instagram']"></fa-icon></a>
+      <a href="#"><fa-icon class="fab" [icon]="['fab', 'pinterest']"></fa-icon></a>
+    </div>
+  </div>
+</div>

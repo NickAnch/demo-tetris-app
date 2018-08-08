@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+$font-main: Arial;
+$body-color: #EEE;
+
+* {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  background: $body-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.content {
+  margin-top: 80px;
+  margin-bottom: 90px; 
+}
+
+.button-primary {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 6px;
+  background: #018790;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+
+	:hover {
+		color: #DDD;
+	}
+} 
+

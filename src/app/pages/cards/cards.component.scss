@@ -1,0 +1,20 @@
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+app-card {
+	animation: spin 1s ease-out;
+}
+
+@keyframes spin {
+	from {
+		opacity: .3;
+		transform: translate(0, -80px) scale(.75);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0) scale(1);
+	}
+}
